@@ -6,3 +6,13 @@
 这是Oracle的weblogic10.3原文
 
 http://download.oracle.com/docs/cd/E12840_01/wls/docs103/client/jarbuilder.html
+
+JDBC驱动加载：
+
+-Class.forName()会导致类的初始化
+-DriverManager的Register方法，注册
+
+-DriverManager.getCollection()方法会遍历已经注册到系统中的驱动，调用驱动中相应的方法来得到真正的数据库连接。
+（
+自JDBC4.0开始，Class.forName("");可以省略掉了，因为在DriverManager的静态代码块儿里会寻找 jdbc.drivers 这个系统变量，
+找到相应的驱动程序并使用Class.forName()来加载它 
