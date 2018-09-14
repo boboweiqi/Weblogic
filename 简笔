@@ -1,0 +1,8 @@
+
+在开发Weblogic相关程序时，有时需要引用Weblogic内部Jar包，一般的做法，是直接引用weblogic.jar，但是这样会自动引入超多的相关Jar，非常凌乱，
+其实Weblogic内部已经有相关工具，制作出简化的引用Jar，这个工具就是:wljarbuilder.jar
+
+
+这是Oracle的weblogic10.3原文
+
+http://download.oracle.com/docs/cd/E12840_01/wls/docs103/client/jarbuilder.html
